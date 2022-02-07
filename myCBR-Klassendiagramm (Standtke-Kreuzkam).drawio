@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-07T13:35:49.663Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="KIRpFLUiYyecpwqy4nFD" version="16.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-07T13:52:49.155Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="Ypl71h-Jp7aFBrjPa4st" version="16.5.2" type="github">
   <diagram id="ee18EBXOyEq-dEGFgHTC" name="Page-1">
-    <mxGraphModel dx="1411" dy="2978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1689" dy="2785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -467,19 +467,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="P6JcsMyotNKticRZ92DO-113" value="IntervalAttribute" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="4030" y="614" width="310" height="140" as="geometry" />
+          <mxGeometry x="4030" y="614" width="310" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="P6JcsMyotNKticRZ92DO-114" value="- interval: Pair&lt;Number, Number&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="P6JcsMyotNKticRZ92DO-113" vertex="1">
+        <mxCell id="P6JcsMyotNKticRZ92DO-114" value="- interval: Pair&lt;Double, Double&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="P6JcsMyotNKticRZ92DO-113" vertex="1">
           <mxGeometry y="26" width="310" height="24" as="geometry" />
         </mxCell>
         <mxCell id="P6JcsMyotNKticRZ92DO-115" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="P6JcsMyotNKticRZ92DO-113" vertex="1">
           <mxGeometry y="50" width="310" height="6" as="geometry" />
         </mxCell>
-        <mxCell id="P6JcsMyotNKticRZ92DO-116" value="# IntervalAttribute(IntervalDesc, float, float)&#xa;# IntervalAttribute(IntervalDesc, Pair&lt;Number, Number&gt;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="P6JcsMyotNKticRZ92DO-113" vertex="1">
+        <mxCell id="P6JcsMyotNKticRZ92DO-116" value="# IntervalAttribute(IntervalDesc, double, double)&#xa;# IntervalAttribute(IntervalDesc, Pair&lt;Double, Double&gt;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="P6JcsMyotNKticRZ92DO-113" vertex="1">
           <mxGeometry y="56" width="310" height="34" as="geometry" />
         </mxCell>
-        <mxCell id="P6JcsMyotNKticRZ92DO-117" value="+ getInterval(): Pair&lt;Number, Number&gt;&#xa;+ toString(): String&#xa;+ equals(Object): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="P6JcsMyotNKticRZ92DO-113" vertex="1">
-          <mxGeometry y="90" width="310" height="50" as="geometry" />
+        <mxCell id="P6JcsMyotNKticRZ92DO-117" value="+ getInterval(): Pair&lt;Double, Double&gt;&#xa;+ toString(): String&#xa;+ equals(Object): boolean&#xa;+ getValueAsString(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="P6JcsMyotNKticRZ92DO-113" vertex="1">
+          <mxGeometry y="90" width="310" height="70" as="geometry" />
         </mxCell>
         <mxCell id="P6JcsMyotNKticRZ92DO-118" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=1.001;entryY=0.256;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.009;exitY=0.643;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="P6JcsMyotNKticRZ92DO-116" target="P6JcsMyotNKticRZ92DO-54" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -490,7 +490,7 @@
         <mxCell id="P6JcsMyotNKticRZ92DO-119" value="IntervalRange" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="2535" y="330" width="340" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="P6JcsMyotNKticRZ92DO-120" value="- desc: IntervalDesc&#xa;- atts: HashMap&lt;Pair&lt;Number, Number&gt;, IntervalAttribute&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="P6JcsMyotNKticRZ92DO-119" vertex="1">
+        <mxCell id="P6JcsMyotNKticRZ92DO-120" value="- desc: IntervalDesc&#xa;- atts: HashMap&lt;Pair&lt;Double, Double&gt;, IntervalAttribute&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="P6JcsMyotNKticRZ92DO-119" vertex="1">
           <mxGeometry y="26" width="340" height="34" as="geometry" />
         </mxCell>
         <mxCell id="P6JcsMyotNKticRZ92DO-121" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="P6JcsMyotNKticRZ92DO-119" vertex="1">
@@ -499,7 +499,7 @@
         <mxCell id="P6JcsMyotNKticRZ92DO-122" value="+ IntervalRange(Project, IntervalDesc)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="P6JcsMyotNKticRZ92DO-119" vertex="1">
           <mxGeometry y="66" width="340" height="24" as="geometry" />
         </mxCell>
-        <mxCell id="P6JcsMyotNKticRZ92DO-123" value="+ getIntervalValue(Pair&lt;Number, Number&gt;): IntervalAttribute&#xa;- cleanData(): void&#xa;+ update(Observable, Object): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="P6JcsMyotNKticRZ92DO-119" vertex="1">
+        <mxCell id="P6JcsMyotNKticRZ92DO-123" value="+ getIntervalValue(Pair&lt;Double, Double&gt;): IntervalAttribute&#xa;- cleanData(): void&#xa;+ update(Observable, Object): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="P6JcsMyotNKticRZ92DO-119" vertex="1">
           <mxGeometry y="90" width="340" height="50" as="geometry" />
         </mxCell>
         <mxCell id="P6JcsMyotNKticRZ92DO-124" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0.005;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="P6JcsMyotNKticRZ92DO-123" target="P6JcsMyotNKticRZ92DO-7" edge="1">
@@ -902,16 +902,16 @@
         <mxCell id="Yp3YMdOh8-Mn880G9579-80" value="IntervalDesc" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="1370" y="-1850" width="320" height="280" as="geometry" />
         </mxCell>
-        <mxCell id="Yp3YMdOh8-Mn880G9579-81" value="- range: IntervalRange&#xa;- min: Number&#xa;- max: Number" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-80" vertex="1">
+        <mxCell id="Yp3YMdOh8-Mn880G9579-81" value="- range: IntervalRange&#xa;- min: double&#xa;- max: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-80" vertex="1">
           <mxGeometry y="26" width="320" height="70" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-82" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-80" vertex="1">
           <mxGeometry y="96" width="320" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="Yp3YMdOh8-Mn880G9579-83" value="+ IntervalDesc(Concept, String, Number, Number)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-80" vertex="1">
+        <mxCell id="Yp3YMdOh8-Mn880G9579-83" value="+ IntervalDesc(Concept, String, double, double)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-80" vertex="1">
           <mxGeometry y="106" width="320" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="Yp3YMdOh8-Mn880G9579-84" value="+ getIntervalAttribute(Number, Number): IntervalAttribute&#xa;+ getMin(): Number&#xa;+ setMin(Number). void&#xa;+ getMax(): Number&#xa;+ setMax(Number): void&#xa;+ addIntervalFct(String, boolean): IntervalFct&#xa;+ fits(Attribute): boolean&#xa;+ fitsSingle(Attribute): boolean&#xa;- check(IntervalAttribute): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-80" vertex="1">
+        <mxCell id="Yp3YMdOh8-Mn880G9579-84" value="+ getIntervalAttribute(double, double): IntervalAttribute&#xa;+ getMin(): double&#xa;+ setMin(double). void&#xa;+ getMax(): double&#xa;+ setMax(double): void&#xa;+ addIntervalFct(String, boolean): IntervalFct&#xa;+ fits(Attribute): boolean&#xa;+ fitsSingle(Attribute): boolean&#xa;- check(IntervalAttribute): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-80" vertex="1">
           <mxGeometry y="126" width="320" height="134" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-85" value="# addDefaultFct(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2" parent="Yp3YMdOh8-Mn880G9579-80" vertex="1">
