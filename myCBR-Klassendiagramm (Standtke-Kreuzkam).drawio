@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-07T14:58:47.405Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="nxshVkqAoZsWXsOQ5YjC" version="16.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-07T14:59:18.775Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="C4UBZykvioutDke-WlE-" version="16.5.2" type="github">
   <diagram id="ee18EBXOyEq-dEGFgHTC" name="Page-1">
-    <mxGraphModel dx="1640" dy="2759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2249" dy="3075" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1367,7 +1367,7 @@
         <mxCell id="Zt8ITWkyCNrxcCpvS0CE-11" value="+ start(): void&#xa;+ setRetrievalEngine(RetrievalEngine): void&#xa;+ getRetrievalEngine(): RetrievalEngine&#xa;+ setCaseBase(ICaseBase): void&#xa;+ getCaseBase(): ICaseBase&#xa;+ getQueryInstance(): Instance&#xa;+ resetQuery(): Instance&#xa;+ setK(int): void&#xa;+ getK(): int&#xa;+ setRetrievalMethod(RetrievalMethod): void&#xa;+ isFinished(): boolean&#xa;+ getRetrievalMethod(): RetrievalMethod&#xa;+ run(): void&#xa;+ getResult(): List&lt;Pair&lt;Instance, Similarity&gt;&gt;&#xa;ENUM RetrievalMethod &#xa;   = {RETRIEVE, RETRIEVE_SORTED, RETRIEVE_K, &#xa;       RETRIEVE_K_SORTED}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="Zt8ITWkyCNrxcCpvS0CE-7">
           <mxGeometry y="220" width="350" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-13" value="RetrievalEngine" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-13" value="RetrievalEngine" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="5190" y="190" width="420" height="150" as="geometry" />
         </mxCell>
         <mxCell id="Zt8ITWkyCNrxcCpvS0CE-15" value="# currentCase: Instance" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zt8ITWkyCNrxcCpvS0CE-13">
