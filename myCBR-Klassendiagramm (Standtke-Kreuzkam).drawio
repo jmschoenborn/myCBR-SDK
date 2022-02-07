@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-07T13:52:49.155Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="Ypl71h-Jp7aFBrjPa4st" version="16.5.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-07T14:58:47.405Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="nxshVkqAoZsWXsOQ5YjC" version="16.5.2" type="github">
   <diagram id="ee18EBXOyEq-dEGFgHTC" name="Page-1">
-    <mxGraphModel dx="1689" dy="2785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1640" dy="2759" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -203,19 +203,22 @@
           <mxGeometry x="950" y="-1880" width="1840" height="1210" as="geometry" />
         </mxCell>
         <mxCell id="P6JcsMyotNKticRZ92DO-27" value="Concept" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="990" y="-1480" width="450" height="790" as="geometry" />
+          <mxGeometry x="990" y="-1520" width="450" height="820" as="geometry" />
         </mxCell>
         <mxCell id="P6JcsMyotNKticRZ92DO-28" value="# superConcept: Concept&#xa;# range: ConceptRange&#xa;# ID: String&#xa;# subConcepts: HashMap&lt;String, Concept&gt;&#xa;# attDescs: HashMap&lt;String, AttributeDesc&gt;&#xa;# partOfRelations: Vector&lt;ConceptDesc&gt;&#xa;# prj: Project&#xa;- availableAmalgamFcts: HashMap&lt;String, AmalgamationFct&gt;&#xa;- activeAmalgamationFct: AmalgamationFct" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="P6JcsMyotNKticRZ92DO-27" vertex="1">
           <mxGeometry y="26" width="450" height="134" as="geometry" />
         </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-2" value="- Logger: LOGGER = LogManager.getLogger(Concept.class)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="P6JcsMyotNKticRZ92DO-27">
+          <mxGeometry y="160" width="450" height="30" as="geometry" />
+        </mxCell>
         <mxCell id="P6JcsMyotNKticRZ92DO-30" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="P6JcsMyotNKticRZ92DO-27" vertex="1">
-          <mxGeometry y="160" width="450" height="10" as="geometry" />
+          <mxGeometry y="190" width="450" height="10" as="geometry" />
         </mxCell>
         <mxCell id="P6JcsMyotNKticRZ92DO-31" value="+ Concept(String, Project, Concept)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="P6JcsMyotNKticRZ92DO-27" vertex="1">
-          <mxGeometry y="170" width="450" height="20" as="geometry" />
+          <mxGeometry y="200" width="450" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-34" value="+ getSubConcepts(): HashMap&lt;String, Concept&gt;&#xa;+ getAllSubConcepts(): HashMap&lt;String, Concept&gt;&#xa;+ getFct(String): AmalgamationFct&#xa;+ removeSubConcept(String): Concept&#xa;+ renameSubConcept(String, String): void&#xa;+ getSuperConcept(): Concept&#xa;+ removeInstance(String): void&#xa;+ setSuperConcept(Concept, boolean): void&#xa;+ addSubConcept(Concept, boolean): boolean&#xa;- checkOverriddenAtts(Concept, Concept): boolean&#xa;+ setName(String): void&#xa;+ getAttirbuteDesc(): HashMap&lt;String, AttributeDesc&gt;&#xa;+ getAllAttributeDescs(): HashMap&lt;String, AttributeDesc&gt;&#xa;+ addAttributeDesc(AttributeDesc): void&#xa;+ hasDirectAttributeDesc(String): boolean&#xa;+ hasAttributeDesc(String): boolean&#xa;+ getAttributesOfSubDescsForName(String): Vector&lt;AttributeDesc&gt;&#xa;+ removeAttributeDesc(String): boolean&#xa;+ canOverride(Concept): boolean&#xa;+ getProject(): Project&#xa;+ getDirectInstances(): Collection&lt;Instance&gt;&#xa;+ getAllInstances(): Collection&lt;Instance&gt;&#xa;+ deletePartOfRelation(ConceptDesc): void&#xa;+ delete(): void&#xa;+ getInstance(String): Instance&#xa;+ getQueryInstance(): Instance&#xa;+ addInstance(String): Instance&#xa;+ copyInstance(Instance, String): Instance&#xa;+ addInstance(Instance: boolean&#xa;+ renameInstance(String, String, void) &#xa;+ deleteAmalgamFct(AmalgamationFct): void&#xa;+ addAmalgamatioNFct(AmalgamationConfig, String, boolean): AmalgamationFct&#xa;+ getActiveAmalgamFct(): AmalgamationFct&#xa;+ setActiveAmalgamFct(AmalgamationFct): void&#xa;+ getAvailableAmalgamFcts(): List&lt;AmalgamationFct&gt;&#xa;+ renameAmalgamationFct(String, String): void&#xa;+ getAttributeDesc(String): AttributeDesc&#xa;+ renameAttDesc(String, String): void&#xa;+ getName(): String&#xa;+ getExpType(): Explainable&#xa;+ setAllInstancesMultiple(AttributeDesc): void&#xa;+ setAllInstancesSingle(AttributeDesc): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="P6JcsMyotNKticRZ92DO-27" vertex="1">
-          <mxGeometry y="190" width="450" height="600" as="geometry" />
+          <mxGeometry y="220" width="450" height="600" as="geometry" />
         </mxCell>
         <mxCell id="P6JcsMyotNKticRZ92DO-32" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="pbR3uyqQSh66m5jHqkTy-10" target="Yp3YMdOh8-Mn880G9579-34" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -726,22 +729,19 @@
           <mxGeometry y="26" width="130" height="64" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-10" value="BooleanDesc" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="1020" y="-1850" width="280" height="350" as="geometry" />
+          <mxGeometry x="1020" y="-1850" width="280" height="134" as="geometry" />
         </mxCell>
-        <mxCell id="Yp3YMdOh8-Mn880G9579-11" value="# DELETE_NOTIFICATION = &quot;deleted&quot;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" parent="Yp3YMdOh8-Mn880G9579-10" vertex="1">
-          <mxGeometry y="26" width="280" height="24" as="geometry" />
-        </mxCell>
-        <mxCell id="Yp3YMdOh8-Mn880G9579-12" value="# name: String&#xa;# owner: Concept&#xa;# isMultiple: boolean&#xa;# range: Range" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-10" vertex="1">
-          <mxGeometry y="50" width="280" height="70" as="geometry" />
+        <mxCell id="Yp3YMdOh8-Mn880G9579-12" value="- symbolTrue: SymbolAttribute&#xa;- symbolFalse: SymbolAttribute" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-10" vertex="1">
+          <mxGeometry y="26" width="280" height="34" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-10" vertex="1">
-          <mxGeometry y="120" width="280" height="10" as="geometry" />
+          <mxGeometry y="60" width="280" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="Yp3YMdOh8-Mn880G9579-14" value="+ AttributeDesc(Concept, String)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-10" vertex="1">
-          <mxGeometry y="130" width="280" height="20" as="geometry" />
+        <mxCell id="Yp3YMdOh8-Mn880G9579-14" value="BooleanDesc(Concept, String)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-10" vertex="1">
+          <mxGeometry y="70" width="280" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="Yp3YMdOh8-Mn880G9579-15" value="+ setMultiple(boolean): void&#xa;+ isMultiple(): boolean&#xa;+ setOwner(Concept): void&#xa;+ getOwner(): Concept&#xa;+ setName(String): void&#xa;+ getName(): String&#xa;+ canOverride(AttributeDesc): boolean&#xa;+ getAttribute(Object): Attribute&#xa;+ updateAmalgamationFcts(Concept, Object): void&#xa;+ fits(Attribute): boolean&#xa;+ fitsSingle(Attribute): boolean&#xa;+ delete(): void&#xa;+ deleteAllFcts(): void&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-10" vertex="1">
-          <mxGeometry y="150" width="280" height="200" as="geometry" />
+        <mxCell id="Yp3YMdOh8-Mn880G9579-15" value="+ getBooleanAttribute(Boolean): SymbolAttribute&#xa;+ addBooleanFct(String, Boolean): SymbolFct" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-10" vertex="1">
+          <mxGeometry y="90" width="280" height="44" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-23" value="SimpleAttDesc" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="2000" y="-1450" width="220" height="240" as="geometry" />
@@ -768,19 +768,22 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-16" value="SymbolDesc" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="1480" y="-1330" width="420" height="300" as="geometry" />
+          <mxGeometry x="1480" y="-1330" width="420" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-4" value="- LOGGER: logger = LogManager.getLogger(SymbolDesc.class)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Yp3YMdOh8-Mn880G9579-16">
+          <mxGeometry y="26" width="420" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-16" vertex="1">
-          <mxGeometry y="26" width="420" height="10" as="geometry" />
+          <mxGeometry y="46" width="420" height="10" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-20" value="+ SymbolDesc(Concept, String, Set&lt;String&gt;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-16" vertex="1">
-          <mxGeometry y="36" width="420" height="20" as="geometry" />
+          <mxGeometry y="56" width="420" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-21" value="+ addOrderedSymbolFct(String, boolean)&#xa;+ getAttribute(String): Attribute&#xa;+ addSymbol(String): SymbolAttribute&#xa;+ getSymbolAttributes(): Collcetion&lt;SymbolAttribute&gt;&#xa;+ getAllowedValues(): Set&lt;String&gt;&#xa;+ isAllowedValue(String): boolean&#xa;+ removeSymbol(String): void&#xa;+ canOverride(AttributeDesc): boolean&#xa;+ getIndexOf(SimpleAttribute): Integer&#xa;+ fits(Attribute): boolean&#xa;+ fitsSingle(Attribute): boolean&#xa;- check(SymbolAttribute): boolean&#xa;+ renameValue(String, String): boolean&#xa;+ addSymbolFct(String, boolean): SymbolFct&#xa;+ addTaxonomyFct(String, boolean): TaxonomyFct" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-16" vertex="1">
-          <mxGeometry y="56" width="420" height="214" as="geometry" />
+          <mxGeometry y="76" width="420" height="214" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-32" value="# addDefaultFct(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=2" parent="Yp3YMdOh8-Mn880G9579-16" vertex="1">
-          <mxGeometry y="270" width="420" height="30" as="geometry" />
+          <mxGeometry y="290" width="420" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-29" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=-0.003;entryY=0.575;entryDx=0;entryDy=0;exitX=0.997;exitY=0.3;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" parent="1" source="Yp3YMdOh8-Mn880G9579-20" target="Yp3YMdOh8-Mn880G9579-28" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -795,7 +798,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-35" value="ConceptDesc" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="1780" y="-1000" width="360" height="220" as="geometry" />
+          <mxGeometry x="1830" y="-1000" width="360" height="220" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-37" value="- concept: Concept&#xa;- multipleConfigs: HashMap&lt;AmalagamationFct, MultipleConfig&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-35" vertex="1">
           <mxGeometry y="26" width="360" height="44" as="geometry" />
@@ -840,7 +843,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-57" value="&lt;&lt;enumeration&gt;&gt;&#xa;Description" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="1480" y="-840" width="100" height="160" as="geometry" />
+          <mxGeometry x="1480" y="-800" width="100" height="160" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-58" value="Boolean&#xa;Concept&#xa;Date&#xa;Interval&#xa;Integer&#xa;Float&#xa;Double&#xa;String &#xa;Symbol" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-57" vertex="1">
           <mxGeometry y="26" width="100" height="134" as="geometry" />
@@ -924,16 +927,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-87" value="SpecialDesc" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="1510" y="-990" width="230" height="140" as="geometry" />
+          <mxGeometry x="1450" y="-984" width="350" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-5" value="- LOGGER: logger = LogManager.getLogger(SpecialDesc.class)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Yp3YMdOh8-Mn880G9579-87">
+          <mxGeometry y="26" width="350" height="24" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-90" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-87" vertex="1">
-          <mxGeometry y="26" width="230" height="10" as="geometry" />
+          <mxGeometry y="50" width="350" height="10" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-91" value="+ SpecialDesc(Project, HashSet&lt;String&gt;)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-87" vertex="1">
-          <mxGeometry y="36" width="230" height="20" as="geometry" />
+          <mxGeometry y="60" width="350" height="20" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-92" value="+ getDefault(): SpecialDesc&#xa;+ getAttribute(String): Attribute&#xa;+ getIndexOf(SpecialAttribute): Integer&#xa;+ removeSymbol(String): void&#xa;+ addSpecialFct(String, boolean)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="Yp3YMdOh8-Mn880G9579-87" vertex="1">
-          <mxGeometry y="56" width="230" height="84" as="geometry" />
+          <mxGeometry y="80" width="350" height="84" as="geometry" />
         </mxCell>
         <mxCell id="Yp3YMdOh8-Mn880G9579-93" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;entryX=0.36;entryY=1.051;entryDx=0;entryDy=0;exitX=0.52;exitY=0.008;exitDx=0;exitDy=0;entryPerimeter=0;exitPerimeter=0;" parent="1" source="Yp3YMdOh8-Mn880G9579-87" target="Yp3YMdOh8-Mn880G9579-32" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
@@ -1338,6 +1344,57 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="6659.4400000000005" y="-862.6740000000001" as="sourcePoint" />
             <mxPoint x="6540" y="-869.9960000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-6" value="de.dfki.mycbr.core.casebase" style="shape=folder;fontStyle=1;spacingTop=-7;tabWidth=180;tabHeight=14;tabPosition=left;html=1;verticalAlign=top;align=left;horizontal=1;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="1">
+          <mxGeometry x="4590" y="30" width="2683" height="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-7" value="Retrieval" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="4690" y="190" width="350" height="470" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-8" value="- LOGGER: Logger = LogManager.getLogger(Retrieval.class)&#xa;- serialVersionID: long" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" vertex="1" parent="Zt8ITWkyCNrxcCpvS0CE-7">
+          <mxGeometry y="26" width="350" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-12" value="# retrievalMethod: RetrievalMethod&#xa;- query: Instance&#xa;- re: RetrievalEngine&#xa;- p: Project&#xa;- cb: ICaseBase&#xa;- k: int&#xa;- finished: boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zt8ITWkyCNrxcCpvS0CE-7">
+          <mxGeometry y="60" width="350" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Zt8ITWkyCNrxcCpvS0CE-7">
+          <mxGeometry y="180" width="350" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-10" value="+ Retrieval(Concept, ICaseBase)&#xa;+ Retrieval(Concept, ICaseBase, RetrievalEngine)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="Zt8ITWkyCNrxcCpvS0CE-7">
+          <mxGeometry y="186" width="350" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-11" value="+ start(): void&#xa;+ setRetrievalEngine(RetrievalEngine): void&#xa;+ getRetrievalEngine(): RetrievalEngine&#xa;+ setCaseBase(ICaseBase): void&#xa;+ getCaseBase(): ICaseBase&#xa;+ getQueryInstance(): Instance&#xa;+ resetQuery(): Instance&#xa;+ setK(int): void&#xa;+ getK(): int&#xa;+ setRetrievalMethod(RetrievalMethod): void&#xa;+ isFinished(): boolean&#xa;+ getRetrievalMethod(): RetrievalMethod&#xa;+ run(): void&#xa;+ getResult(): List&lt;Pair&lt;Instance, Similarity&gt;&gt;&#xa;ENUM RetrievalMethod &#xa;   = {RETRIEVE, RETRIEVE_SORTED, RETRIEVE_K, &#xa;       RETRIEVE_K_SORTED}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="Zt8ITWkyCNrxcCpvS0CE-7">
+          <mxGeometry y="220" width="350" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-13" value="RetrievalEngine" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="5190" y="190" width="420" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-15" value="# currentCase: Instance" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zt8ITWkyCNrxcCpvS0CE-13">
+          <mxGeometry y="26" width="420" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Zt8ITWkyCNrxcCpvS0CE-13">
+          <mxGeometry y="50" width="420" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-18" value="+ retrieve(ICaseBase, Instance): List&lt;Pair&lt;Instance, Similarity&gt;&gt;&#xa;+ retrieveSorted(ICaseBase, Instance): List&lt;Pair&lt;Instance, Similarity&gt;&gt;&#xa;+ retrieveK(ICaseBase, Instance, int): List&lt;Pair&lt;Instance, Similarity&gt;&gt;&#xa;+ retrieveKSorted(ICaseBase, Instance, int): List&lt;Pair&lt;Instance, Similarity&gt;&gt;&#xa;+ setCurrentCase(Instance): void&#xa;+ getCurrentCase(): Instance" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="Zt8ITWkyCNrxcCpvS0CE-13">
+          <mxGeometry y="56" width="420" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-19" value="RetrievalEngine" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="5190" y="400" width="430" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-20" value="- prj: Project&#xa;- retrieval: Retrieval" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Zt8ITWkyCNrxcCpvS0CE-19">
+          <mxGeometry y="26" width="430" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-21" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="Zt8ITWkyCNrxcCpvS0CE-19">
+          <mxGeometry y="60" width="430" height="6" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-22" value="+ SequentialRetrieval(Project, Retrieval)&#xa;- calculateLocalSim(SymbolAttribute, Instance, Instance): Similarity&#xa;- addSorted(List&lt;Pair&lt;Instance, Similarity&gt;&gt;, Pair &lt;Instance, Similarity&gt;): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="Zt8ITWkyCNrxcCpvS0CE-19">
+          <mxGeometry y="66" width="430" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="Zt8ITWkyCNrxcCpvS0CE-23" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Zt8ITWkyCNrxcCpvS0CE-18" target="Zt8ITWkyCNrxcCpvS0CE-19">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="5140" y="390" as="sourcePoint" />
+            <mxPoint x="5300" y="390" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
