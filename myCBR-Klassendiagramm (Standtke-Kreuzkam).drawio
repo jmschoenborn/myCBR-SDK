@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-08T12:13:58.635Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="DbxTOkqNamGEuEq6nDs4" version="16.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-08T12:57:21.480Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="x4RA68RNR1fOPSWuy3tk" version="16.5.3" type="github">
   <diagram id="Gu31S6pkvQAPgfyOuc1N" name="Page-1">
     <mxGraphModel dx="1363" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1326,34 +1326,40 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="FTfPVMMRRFmOpc5WDNTI-382" value="Taxonomy" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="6690" y="1070" width="410" height="390" as="geometry" />
+          <mxGeometry x="6680" y="1033" width="410" height="414" as="geometry" />
+        </mxCell>
+        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-38" value="- LOGGER: Logger" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" vertex="1" parent="FTfPVMMRRFmOpc5WDNTI-382">
+          <mxGeometry y="26" width="410" height="24" as="geometry" />
         </mxCell>
         <mxCell id="FTfPVMMRRFmOpc5WDNTI-383" value="- topSymbol: TaxonomyNode&#xa;- topSimilarity: Similarity&#xa;- sims: HashMap&lt;TaxonomyNode, Similarity&gt;&#xa;- parents: HashMap&lt;TaxonomyNode, Similarity&gt;&#xa;- leaves: List&lt;TaxonomyNode&gt;&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="FTfPVMMRRFmOpc5WDNTI-382" vertex="1">
-          <mxGeometry y="26" width="410" height="84" as="geometry" />
+          <mxGeometry y="50" width="410" height="84" as="geometry" />
         </mxCell>
         <mxCell id="FTfPVMMRRFmOpc5WDNTI-384" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="FTfPVMMRRFmOpc5WDNTI-382" vertex="1">
-          <mxGeometry y="110" width="410" height="6" as="geometry" />
+          <mxGeometry y="134" width="410" height="6" as="geometry" />
         </mxCell>
         <mxCell id="FTfPVMMRRFmOpc5WDNTI-385" value="# Taxonomy(TaxonomyNode)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="FTfPVMMRRFmOpc5WDNTI-382" vertex="1">
-          <mxGeometry y="116" width="410" height="24" as="geometry" />
+          <mxGeometry y="140" width="410" height="24" as="geometry" />
         </mxCell>
         <mxCell id="FTfPVMMRRFmOpc5WDNTI-386" value="# containsAsSubnode(TaxonomyNode, TaxonomyNode): boolean&#xa;# setParent(TaxonomyNode, TaxonomyNode): void&#xa;# getCommonAncestor(TaxonomyNode, TaxonomyNode): TaxonomyNode&#xa;- getParentsOf(TaxonomyNode, Vector&lt;TaxonomyNide&gt;): void&#xa;# isLeaf(TaxonomyNode): boolean&#xa;+ getSimilarity(TaxonomyNode): Similarity&#xa;# getLeaves(TaxonomyNode): List&lt;TaxonomyNode&gt;&#xa;# countLeaves(TaxonomyNode): int&#xa;+ getTopSymbol(): TaxonomyNode&#xa;# setSimilarity(TaxonomyNode, Similarity): void&#xa;+ getParent(TaxonomyNode): TaxonomyNode&#xa;+ getChildren(TaxonomyNode): List&lt;TaxonomyNode&gt;&#xa;+ getSimilarityMap(): HashMap&lt;TaxonomyNode, TaxonomyNode&gt;&#xa;+ getParentMap(): HashMap&lt;TaxonomyNode, TaxonomyNode&gt;&#xa;+ getLeaves(): List&lt;TaxonomyNode&gt;&#xa;- removeAttribute(TaxonomyNode): void&#xa;- addAttribute(TaxonomyNode): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="FTfPVMMRRFmOpc5WDNTI-382" vertex="1">
-          <mxGeometry y="140" width="410" height="250" as="geometry" />
+          <mxGeometry y="164" width="410" height="250" as="geometry" />
         </mxCell>
         <mxCell id="FTfPVMMRRFmOpc5WDNTI-387" value="TaxonomyFct" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="7160" y="1070" width="490" height="370" as="geometry" />
+          <mxGeometry x="7140" y="1030" width="490" height="394" as="geometry" />
+        </mxCell>
+        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-39" value="- LOGGER: Logger" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" vertex="1" parent="FTfPVMMRRFmOpc5WDNTI-387">
+          <mxGeometry y="26" width="490" height="24" as="geometry" />
         </mxCell>
         <mxCell id="FTfPVMMRRFmOpc5WDNTI-388" value="- queryConfig: TaxonomyConfig&#xa;- caseConfig: TaxonomyConfig&#xa;- taxonomy: Taxonomy&#xa;- prj: Project" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="FTfPVMMRRFmOpc5WDNTI-387" vertex="1">
-          <mxGeometry y="26" width="490" height="64" as="geometry" />
+          <mxGeometry y="50" width="490" height="64" as="geometry" />
         </mxCell>
         <mxCell id="FTfPVMMRRFmOpc5WDNTI-389" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="FTfPVMMRRFmOpc5WDNTI-387" vertex="1">
-          <mxGeometry y="90" width="490" height="6" as="geometry" />
+          <mxGeometry y="114" width="490" height="6" as="geometry" />
         </mxCell>
         <mxCell id="FTfPVMMRRFmOpc5WDNTI-390" value="+ TaxonomyFct(Project, SymbolDesc, List&lt;SymbolAttribute&gt;, String)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="FTfPVMMRRFmOpc5WDNTI-387" vertex="1">
-          <mxGeometry y="96" width="490" height="24" as="geometry" />
+          <mxGeometry y="120" width="490" height="24" as="geometry" />
         </mxCell>
         <mxCell id="FTfPVMMRRFmOpc5WDNTI-391" value="+ updateTable(): void&#xa;- computeSimilarityByTaxonomy(TaxonomyNode, TaxonomyNode): Similarity&#xa;- getSimilarityForInnerNode(SymbolAttribute, SymbolAttribute, TaonomyConfig): Similarity&#xa;+ setNodeSimilarity(TaxonomyNode, Similarity): void&#xa;+ getTaxonomy(): Taxonomy&#xa;+ setQueryConfig(TaxonomyConfig): void&#xa;+ getQueryConfig(): TaxonomyConfig&#xa;+ setCaseConfig(TaxonomyConfig): void&#xa;+ getCaseConfig(): TaxonomyConfig&#xa;+ setParent(TaxonomyNode, TaxonomyNode): void&#xa;+ getCommonAncestor(SymbolAttribute, SymbolAttribute): Object&#xa;# updateSimilarity(SymbolAttribute, Similarity): void&#xa;# updateSimilarity(SymbolDesc, Similarity): void&#xa;+ getParent(TaxonomyNode): Object&#xa;+ getTopSymbol(): TaxonomyNode&#xa;+ getSimilarity(TaxonomyNode): Similarity&#xa;+ entrySet(): Collection&lt;Entry&lt;TaxonomyNode, TaxonomyNode&gt;&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" parent="FTfPVMMRRFmOpc5WDNTI-387" vertex="1">
-          <mxGeometry y="120" width="490" height="250" as="geometry" />
+          <mxGeometry y="144" width="490" height="250" as="geometry" />
         </mxCell>
         <mxCell id="FTfPVMMRRFmOpc5WDNTI-392" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.173;exitY=1.008;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.807;entryY=0.005;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="FTfPVMMRRFmOpc5WDNTI-391" target="FTfPVMMRRFmOpc5WDNTI-354" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
