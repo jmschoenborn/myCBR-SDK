@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-02-08T13:38:21.803Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="0lj1s8-IJrctNEq338jv" version="16.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-08T13:43:39.951Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="NtWNn7aKsi_Toh5GIjmX" version="16.5.3" type="github">
   <diagram id="Gu31S6pkvQAPgfyOuc1N" name="Page-1">
     <mxGraphModel dx="107" dy="1684" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1578,19 +1578,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-61" value="MyCBRImporter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="8176" y="2201" width="290" height="230" as="geometry" />
+          <mxGeometry x="8176" y="2150" width="290" height="250" as="geometry" />
         </mxCell>
-        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-62" value="- path: String&#xa;- cb: ICaseBase&#xa;- checkedVersion: boolean&#xa;- prj: Project&#xa;- currentConceptDescription: Concept&#xa;- currentInheritanceNode: SymbolAttribute&#xa;- currentInheritanceFct: TaxonomyFct&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-61">
-          <mxGeometry y="26" width="290" height="104" as="geometry" />
+        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-62" value="- LOGGER: Logger&#xa;- path: String&#xa;- cb: ICaseBase&#xa;- checkedVersion: boolean&#xa;- prj: Project&#xa;- currentConceptDescription: Concept&#xa;- currentInheritanceNode: SymbolAttribute&#xa;- currentInheritanceFct: TaxonomyFct&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-61">
+          <mxGeometry y="26" width="290" height="124" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-63" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-61">
-          <mxGeometry y="130" width="290" height="10" as="geometry" />
+          <mxGeometry y="150" width="290" height="10" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-64" value="+ myCBRImporter(Project)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-61">
-          <mxGeometry y="140" width="290" height="24" as="geometry" />
+          <mxGeometry y="160" width="290" height="24" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-65" value="+ doImport(): void&#xa;- cleanDefaultFcts(): void&#xa;- checkVersion(String): boolean&#xa;+ startElement(String, String, String, Attribute): void&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-61">
-          <mxGeometry y="164" width="290" height="66" as="geometry" />
+          <mxGeometry y="184" width="290" height="66" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-66" value="ConceptImporter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="8546" y="2195" width="280" height="126" as="geometry" />
@@ -1649,7 +1649,7 @@
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-81" value="XMLExporter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="8146" y="2730" width="430" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-82" value="+ PROJECT_FILE_EXTENSION: String = &quot;.myCBR&quot;&#xa;+ CB_FILE_EXTENSION: String = &quot;.myCB&quot;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-81">
+        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-82" value="+ PROJECT_FILE_EXTENSION: String = &quot;.myCBR&quot;&#xa;+ CB_FILE_EXTENSION: String = &quot;.myCB&quot;&#xa;- LOGGER: Logger&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-81">
           <mxGeometry y="26" width="430" height="44" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-83" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-81">
@@ -1659,19 +1659,19 @@
           <mxGeometry y="80" width="430" height="150" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-85" value="XMLImporter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="8606" y="2730" width="440" height="440" as="geometry" />
+          <mxGeometry x="8606" y="2730" width="440" height="470" as="geometry" />
         </mxCell>
-        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-86" value="+ TMP_PART_OF_CONCEPT: String = &quot;TMP_PART_OF_CONCEPT&quot;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-85">
-          <mxGeometry y="26" width="440" height="24" as="geometry" />
+        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-86" value="+ TMP_PART_OF_CONCEPT: String = &quot;TMP_PART_OF_CONCEPT&quot;&#xa;- LOGGER: Logger&#xa;- BUFFER_SIZE: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-85">
+          <mxGeometry y="26" width="440" height="54" as="geometry" />
         </mxCell>
-        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-87" value="- prj: Project&#xa;- path: String&#xa;- currentConcept: Concept&#xa;- zipFile: ZipFile&#xa;- currentCaseCount: int&#xa;- totalCaseCount: int&#xa;- t: Thread&#xa;- BUFFER_SIZE: int&#xa;- currentSuperConcept: Concept&#xa;- myCB: String&#xa;- myCBR: String&#xa;- myExp: String&#xa;- partOfMap: HashMap&lt;ConceptDesc, String&gt;&#xa;- tmpFunction: LinkedList&lt;Object&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-85">
-          <mxGeometry y="50" width="440" height="210" as="geometry" />
+        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-87" value="- prj: Project&#xa;- path: String&#xa;- currentConcept: Concept&#xa;- zipFile: ZipFile&#xa;- currentCaseCount: int&#xa;- totalCaseCount: int&#xa;- t: Thread&#xa;- currentSuperConcept: Concept&#xa;- myCB: String&#xa;- myCBR: String&#xa;- myExp: String&#xa;- partOfMap: HashMap&lt;ConceptDesc, String&gt;&#xa;- tmpFunction: LinkedList&lt;Object&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-85">
+          <mxGeometry y="80" width="440" height="210" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-88" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-85">
-          <mxGeometry y="260" width="440" height="10" as="geometry" />
+          <mxGeometry y="290" width="440" height="10" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-89" value="+ XMLImporter(Project)&#xa;+ doImport(): void&#xa;- fixPartOfs(): void&#xa;+ importModel(): void&#xa;+ getTotalNumberOfCases(): int&#xa;+ importCases(): void&#xa;+ isImporting(): boolean&#xa;+ getCurrentNumberOfCases(): int&#xa;+ copyInputStream(InputStream, OutputStream)&#xa;+ getProject(): Project&#xa;- cleanDefaultFcts(Concept): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-85">
-          <mxGeometry y="270" width="440" height="170" as="geometry" />
+          <mxGeometry y="300" width="440" height="170" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-90" value="ModelImporter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="9166" y="2725" width="420" height="240" as="geometry" />
