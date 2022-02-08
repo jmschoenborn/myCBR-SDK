@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-08T13:27:47.391Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="tTYcqOkl30iZR67M0YJJ" version="16.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-08T13:35:36.748Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="5CcFg6SFlQTJMQulT4kT" version="16.5.3" type="github">
   <diagram id="Gu31S6pkvQAPgfyOuc1N" name="Page-1">
-    <mxGraphModel dx="481" dy="1891" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="301" dy="1791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1509,7 +1509,7 @@
           <mxGeometry x="6840" y="-60" width="1330" height="1520" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-41" value="de.dfki.mycbr.io" style="shape=folder;fontStyle=1;spacingTop=-7;tabWidth=180;tabHeight=14;tabPosition=left;html=1;verticalAlign=top;align=left;horizontal=1;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="1">
-          <mxGeometry x="6990" y="2140" width="2710" height="1250" as="geometry" />
+          <mxGeometry x="6990" y="2110" width="2710" height="1280" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-42" value="CSVImporter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="7066" y="2205" width="500" height="940" as="geometry" />
@@ -1545,19 +1545,22 @@
           <mxGeometry y="36" width="80" height="24" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-52" value="DataBaseImporter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="7726" y="2195" width="370" height="600" as="geometry" />
+          <mxGeometry x="7740" y="2131" width="360" height="810" as="geometry" />
         </mxCell>
-        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-53" value="- dbases: HashMap&lt;Integer, Database&gt;&#xa;- db: Database&#xa;- concept: Concept&#xa;- project: Project&#xa;- seperatorMultiple: String&#xa;- con: Connection&#xa;- pstmt: Statement&#xa;- result: Resultset&#xa;- tablename: String&#xa;- dbmapping: String&#xa;- totalCaseCount: int&#xa;- currentCaseCount: int&#xa;- counter: int&#xa;- error: DataBaseImporterError&#xa;- cb: ICaseBase&#xa;- AttributeDescName: ArrayList&lt;Mapping&gt;&#xa;- AttributesDescs: HashMap&lt;AttributeDesc, String&gt;&#xa;- Indicies: HashMap&lt;Pair&lt;String, AttributeDesc&gt;&#xa;- columnsToSkip: Vector&lt;String&gt;&#xa;- invalidValues: HashSet&lt;Pair&lt;String, AttributeDesc&gt;&gt;&#xa;- logger: Logger&#xa;# t: Thread&#xa;Enum DataBaseImporterError = {DataBaseConnect, ValueMissing}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-52">
-          <mxGeometry y="26" width="370" height="330" as="geometry" />
+        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-258" value="- LOGGER: Logger" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-52">
+          <mxGeometry y="26" width="360" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-53" value="- dbases: HashMap&lt;Integer, Database&gt;&#xa;- db: Database&#xa;- concept: Concept&#xa;- project: Project&#xa;- seperatorMultiple: String&#xa;- con: Connection&#xa;- pstmt: Statement&#xa;- result: Resultset&#xa;- tablename: String&#xa;- dbmapping: String&#xa;- totalCaseCount: int&#xa;- currentCaseCount: int&#xa;- counter: int&#xa;- error: DataBaseImporterError&#xa;- cb: ICaseBase&#xa;- usePostgresImport: boolean&#xa;- importColumns: List&lt;String&gt;&#xa;- AttributeDescName: ArrayList&lt;Mapping&gt;&#xa;- AttributesDescs: HashMap&lt;AttributeDesc, String&gt;&#xa;- Indicies: HashMap&lt;Pair&lt;String, AttributeDesc&gt;&#xa;- columnsToSkip: Vector&lt;String&gt;&#xa;- invalidValues: HashSet&lt;Pair&lt;String, AttributeDesc&gt;&gt;&#xa;# t: Thread&#xa;Enum DataBaseImporterError = {DataBaseConnect, ValueMissing}" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-52">
+          <mxGeometry y="50" width="360" height="370" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-54" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-52">
-          <mxGeometry y="356" width="370" height="10" as="geometry" />
+          <mxGeometry y="420" width="360" height="10" as="geometry" />
         </mxCell>
-        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-55" value="+ DataBaseImporter(int, Project, Concept, String)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-52">
-          <mxGeometry y="366" width="370" height="24" as="geometry" />
+        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-55" value="+ DataBaseImporter(int, Project, Concept, String)&#xa;- DataBaseImporter()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-52">
+          <mxGeometry y="430" width="360" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-56" value="+ connectToDatabase(int): boolean&#xa;+ readData(String, String[], String[]): boolean&#xa;+ readMetaDataFromDatabase(String): void&#xa;+ readMetaDataFromXML(): void&#xa;+ addMissingValues(): void&#xa;+ checkData(): void&#xa;+ doImport(): void&#xa;+ getTableName(): String&#xa;+ setTableName(String): void&#xa;+ getTotelNumberOfCases(): int&#xa;+ getCurrentNumberOfCases(): int&#xa;+ getSeperatorMultiple(): String&#xa;+ setSeperatorMultiple(String): void&#xa;+ isImporting(): boolean&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-52">
-          <mxGeometry y="390" width="370" height="210" as="geometry" />
+        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-56" value="+ createPostgresImporter(int, Project, Concept, String)&#xa;+ createGeneralImporter(int, Project, Concept, String)&#xa;+ setUsePostgresImport(boolean): void&#xa;+ usesPostgresImport(): boolean&#xa;+ setImportColumns(List&lt;String&gt;): void&#xa;+ getImportColumns(): List&lt;String&gt;&#xa;- loadDriver(): boolean&#xa;+ connectToDatabase(int): boolean&#xa;- generalConnectToDatabase(int): boolean&#xa;+ readData(String, String[], String[]): boolean&#xa;+ readMetaDataFromDatabase(String): void&#xa;+ readMetaDataFromXML(): void&#xa;- getValFromConnection(Element, String): String&#xa;+ addMissingValues(): void&#xa;+ checkData(): void&#xa;+ doImport(): void&#xa;+ getTableName(): String&#xa;+ setTableName(String): void&#xa;+ getTotelNumberOfCases(): int&#xa;+ getCurrentNumberOfCases(): int&#xa;+ getSeperatorMultiple(): String&#xa;+ setSeperatorMultiple(String): void&#xa;+ isImporting(): boolean&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-52">
+          <mxGeometry y="470" width="360" height="340" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-57" value="DatabaseThread" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
           <mxGeometry x="7576" y="2531" width="120" height="60" as="geometry" />
