@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-02-08T13:27:11.341Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="cLxvM2hTiBPFMe4zgjfW" version="16.5.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-02-08T13:27:42.044Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36" etag="RupTlSkvMt4uIoSHfo1Y" version="16.5.3" type="github">
   <diagram id="Gu31S6pkvQAPgfyOuc1N" name="Page-1">
-    <mxGraphModel dx="7348" dy="5679" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="481" dy="1891" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1512,22 +1512,22 @@
           <mxGeometry x="6990" y="2140" width="2710" height="1250" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-42" value="CSVImporter" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="7066" y="2205" width="500" height="920" as="geometry" />
+          <mxGeometry x="7066" y="2205" width="500" height="940" as="geometry" />
         </mxCell>
-        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-43" value="- EXP_LABEL: String = &quot;[@expl]&quot;&#xa;- CB_CSV_IMPORT: String = &quot;CB_csvImport&quot;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-42">
-          <mxGeometry y="26" width="500" height="34" as="geometry" />
+        <mxCell id="SHLqW9IC-3y4aOhXp8Wj-43" value="- EXP_LABEL: String = &quot;[@expl]&quot;&#xa;- CB_CSV_IMPORT: String = &quot;CB_csvImport&quot;&#xa;- LOGGER: Logger" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=4" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-42">
+          <mxGeometry y="26" width="500" height="54" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-44" value="- error: CSVImporterError&#xa;- separator: String&#xa;- explanation: int&#xa;- createMissingDescs: boolean&#xa;- changeDescOnMissingValues: boolean&#xa;- specialAtForMissingValues: boolean&#xa;- symbolThreshold: int&#xa;- col2Meta: HashMap&lt;Integer, Meta&gt;&#xa;- entries: ArrayList&lt;String[]&gt;&#xa;- attributeDescsName: HashSet&lt;String&gt;&#xa;- indices: HashMap&lt;Integer, AttributeDesc&gt;&#xa;- descsToBeCreated: Vector&lt;Pair&lt;String, Integer&gt;&gt;&#xa;- indicesToBeCreated: Vector&lt;Integer&gt;&#xa;- concept: Concept&#xa;- file: File&#xa;- invalidValues: HashSet&lt;Pair&lt;String, AttributeDesc&gt;&gt;&#xa;- header: String[]&#xa;# counter: int&#xa;# pattern: String&#xa;# cb: ICaseBase&#xa;# t: Thread&#xa;- totalCaseCount: int&#xa;- currentCaseCount: int&#xa;Enum CSVImportError = {FileNotFound, ValueMissing, DuplicateDescName, ParsingError}&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-42">
-          <mxGeometry y="60" width="500" height="350" as="geometry" />
+          <mxGeometry y="80" width="500" height="350" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-45" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-42">
-          <mxGeometry y="410" width="500" height="10" as="geometry" />
+          <mxGeometry y="430" width="500" height="10" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-46" value="+ CSVImporter(String, Concept)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-42">
-          <mxGeometry y="420" width="500" height="24" as="geometry" />
+          <mxGeometry y="440" width="500" height="24" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-47" value="+ reset(): void&#xa;+ readData(): void&#xa;+ setMeta(Integer, Meta): void&#xa;+ removeMeta(int): void&#xa;+ addMissingValues(): void&#xa;- setValueUndefined(String, AttributeDesc): void&#xa;+ checkData(): void&#xa;+ addMissingDescriptions(): void&#xa;+ setCaseBase(ICaseBase): void&#xa;+ doImport(): void&#xa;+ getError(): CSVImportError&#xa;+ setSeparator(String): void&#xa;+ getSeparator(): String&#xa;+ getSeparatorMultiple(): String&#xa;+ setSeparatorMultiple(String): void&#xa;+ setCreateMissingDesc(boolean): void&#xa;+ isCreateMissingDescs(): boolean&#xa;+ setChangeDescOnMissingValues(boolean): void&#xa;+ isChangeDescOnMissingValues(): boolean&#xa;+ setSpecialAttForMissingValues(String): void&#xa;+ getSpecialAttForMissingValues(): String&#xa;+ getColumnsToBeSkipped(): Vector&lt;Integer&gt;&#xa;+ getData(): ArrayList&lt;String[]&gt;&#xa;+ getAttributeDescsName(): HashSet&lt;String&gt;&#xa;+ getSymbolThreshold(): int&#xa;+ setSymbolThreshold(int): void&#xa;+ getMissingDescs(): Vector&lt;Pair&lt;String, Integer&gt;&gt;&#xa;+ getInvalidValues(): HashSet&lt;Pair&lt;String, AttributeDesc&gt;&gt;&#xa;+ getIndexToDescMap(): HashMap&lt;AttributeDesc, Integer&gt;&#xa;+ getTotalNumberOfCases(): int&#xa;+ isImporting(): boolean&#xa;+ getCurrentNumberOfCases(): int&#xa;+ getHeader&#xa;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0" vertex="1" parent="SHLqW9IC-3y4aOhXp8Wj-42">
-          <mxGeometry y="444" width="500" height="476" as="geometry" />
+          <mxGeometry y="464" width="500" height="476" as="geometry" />
         </mxCell>
         <mxCell id="SHLqW9IC-3y4aOhXp8Wj-48" value="" style="endArrow=open;startArrow=circlePlus;endFill=0;startFill=0;endSize=8;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="SHLqW9IC-3y4aOhXp8Wj-49">
           <mxGeometry width="160" relative="1" as="geometry">
