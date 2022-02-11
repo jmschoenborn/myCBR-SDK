@@ -1,6 +1,6 @@
 ### Aktualisierung der MyCBR SDK basierend auf Arbeiten von studentischen Arbeiten 
 
-Die Aktualisierungen / neuen Versionen sind jeweils unter den Branches zu finden. Jeder Branch enthält ein zugehöriges UML-Klassendiagramm zu ebendieser Version. 
+Die Aktualisierungen / neuen Versionen sind jeweils unter den Branches zu finden. Jeder Branch enthält ein zugehöriges UML-Klassendiagramm zu ebendieser Version (importierbar auf draw.io). 
 Basierend auf dieser Version wurde ein Tool zum Codevergleich von Nazar verwendet. Die Differenzen zwischen der Standke und der 3.x Version sind jeweils in den Patchnotes.txt Dateien aufgelistet. Ist eine Zeile leer (insbesondere bei der 3.4 Version), so wurde die angezeigte Differenz nicht übernommen, da die Standke Version in den Fällen eine aktuellere Code-Version enthielt. 
 
 Version 3.2 war die Ausgangsversion, bzw. die bereits weiterentwickelte Version von Standke. 
