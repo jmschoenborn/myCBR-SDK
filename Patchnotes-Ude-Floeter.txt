@@ -1,0 +1,199 @@
+Difference Nr. 1: Package deleted or renamed: The old package test.junittest
+Difference Nr. 2: Package deleted or renamed: The old package test.junittest.casebase
+Difference Nr. 3: Package deleted or renamed: The old package test.junittest.load
+Difference Nr. 4: Package deleted or renamed: The old package test.junittest.model
+Difference Nr. 5: Package deleted or renamed: The old package test.junittest.similarity
+Difference Nr. 6: Package added or renamed: There is a new package called de.dfki.mycbr.core.similarity.subtaxonomies.compilation, but it could also be an old package with a new name
+Difference Nr. 7: Package added or renamed: There is a new package called de.dfki.mycbr.core.similarity.subtaxonomies.datastructure, but it could also be an old package with a new name
+Difference Nr. 8: Package added or renamed: There is a new package called de.dfki.mycbr.core.similarity.subtaxonomies.test, but it could also be an old package with a new name
+Difference Nr. 9: Package added or renamed: There is a new package called de.dfki.mycbr.junittest, but it could also be an old package with a new name
+Difference Nr. 10: Package added or renamed: There is a new package called de.dfki.mycbr.junittest.casebase, but it could also be an old package with a new name
+Difference Nr. 11: Package added or renamed: There is a new package called de.dfki.mycbr.junittest.load, but it could also be an old package with a new name
+Difference Nr. 12: Package added or renamed: There is a new package called de.dfki.mycbr.junittest.model, but it could also be an old package with a new name
+Difference Nr. 13: Package added or renamed: There is a new package called de.dfki.mycbr.junittest.similarity, but it could also be an old package with a new name
+Difference Nr. 14: Package added or renamed: There is a new package called de.dfki.mycbr.maintenance, but it could also be an old package with a new name
+Difference Nr. 15: 
+Difference Nr. 16: Import added: Import java.util.ArrayList was added to class Project
+Difference Nr. 17: Import added: Import de.dfki.mycbr.io.ObjectModelImporter was added to class Project
+Difference Nr. 18: Import added: Import de.dfki.mycbr.maintenance.MaintenanceController was added to class Project
+Difference Nr. 19: Import added: Import de.dfki.mycbr.maintenance.MaintenanceMap was added to class Project
+Difference Nr. 20: Attribute added: The attribute maint_control was added to class Project
+Difference Nr. 21: Attribute added: The attribute om_importer was added to class Project
+Difference Nr. 22: Function added: The function getMaintenanceController (Input types: -) was added to class Project
+Difference Nr. 23: The content of the function has changed: The function Project(Input types: -) was updated (in class Project)
+Difference Nr. 24: The content of the function has changed: The function Project(Input types: final String) was updated (in class Project)
+Difference Nr. 25: The content of the function has changed: The function load(Input types: -) was updated (in class Project)
+Difference Nr. 26: 
+Difference Nr. 27: 
+Difference Nr. 28: 
+Difference Nr. 29: 
+Difference Nr. 30: 
+Difference Nr. 31: 
+Difference Nr. 32: 
+Difference Nr. 33: 
+Difference Nr. 34: 
+Difference Nr. 35: 
+Difference Nr. 36: 
+Difference Nr. 37: 
+Difference Nr. 38: 
+Difference Nr. 39: 
+Difference Nr. 40: 
+Difference Nr. 41: 
+Difference Nr. 42: 
+Difference Nr. 43: 
+Difference Nr. 44: 
+Difference Nr. 45: 
+Difference Nr. 46: 
+Difference Nr. 47: 
+Difference Nr. 48: 
+Difference Nr. 49: 
+Difference Nr. 50: 
+Difference Nr. 51: 
+Difference Nr. 52: 
+Difference Nr. 53:
+Difference Nr. 54:
+Difference Nr. 55: 
+Difference Nr. 56: 
+Difference Nr. 57: 
+Difference Nr. 58: 
+Difference Nr. 59:
+Difference Nr. 60: 
+Difference Nr. 61: 
+Difference Nr. 62: 
+Difference Nr. 63: 
+Difference Nr. 64: 
+Difference Nr. 65: 
+Difference Nr. 66: 
+Difference Nr. 67: 
+Difference Nr. 68: 
+Difference Nr. 69: 
+Difference Nr. 70: 
+Difference Nr. 71: 
+Difference Nr. 72: 
+Difference Nr. 73: 
+Difference Nr. 74: The content of the function has changed: The function computeSimilarityByTaxonomy(Input types: TaxonomyNode TaxonomyNode) was updated (in class TaxonomyFct)
+Difference Nr. 75: The content of the function has changed: The function getSimilarityForInnerNode(Input types: SymbolAttribute SymbolAttribute TaxonomyConfig) was updated (in class TaxonomyFct)
+Difference Nr. 76: Function added: The function getName (Input types: -) was added to class TaxonomyNode
+Difference Nr. 77: 
+Difference Nr. 78: 
+Difference Nr. 79: 
+Difference Nr. 80: 
+Difference Nr. 81: 
+Difference Nr. 82: 
+Difference Nr. 83: 
+Difference Nr. 84: Import added: Import java.io.ObjectOutputStream was added to class XMLExporter
+Difference Nr. 85: Function added: The function saveMaintenanceMaps (Input types: Project ObjectOutputStream) was added to class XMLExporter
+Difference Nr. 86: The content of the function has changed: The function save(Input types: Project String) was updated (in class XMLExporter)
+Difference Nr. 87: The content of the function has changed: The function zip(Input types: String) was updated (in class XMLExporter)
+Difference Nr. 88: The content of the function has changed: The function importModel(Input types: -) was updated (in class XMLImporter)
+Difference Nr. 89: 
+Difference Nr. 90: 
+Difference Nr. 91: 
+Difference Nr. 92: 
+Difference Nr. 93: 
+Difference Nr. 94: 
+Difference Nr. 95: 
+Difference Nr. 96: 
+Difference Nr. 97: 
+Difference Nr. 98:
+Difference Nr. 99: 
+Difference Nr. 100: 
+Difference Nr. 101: 
+Difference Nr. 102: 
+Difference Nr. 103: 
+Difference Nr. 104: 
+Difference Nr. 105:
+Difference Nr. 106: 
+Difference Nr. 107: 
+Difference Nr. 108:
+Difference Nr. 109: 
+Difference Nr. 110: 
+Difference Nr. 111: 
+Difference Nr. 112: 
+Difference Nr. 113: 
+Difference Nr. 114: 
+Difference Nr. 115: 
+Difference Nr. 116: 
+Difference Nr. 117: 
+Difference Nr. 118: 
+Difference Nr. 119: 
+Difference Nr. 120: 
+Difference Nr. 121: 
+Difference Nr. 122: 
+Difference Nr. 123: 
+Difference Nr. 124: 
+Difference Nr. 125: 
+Difference Nr. 126: 
+Difference Nr. 127: 
+Difference Nr. 128:
+Difference Nr. 129: 
+Difference Nr. 130: 
+Difference Nr. 131: 
+Difference Nr. 132: 
+Difference Nr. 133: 
+Difference Nr. 134: 
+Difference Nr. 135: 
+Difference Nr. 136: 
+Difference Nr. 137: 
+Difference Nr. 138:
+Difference Nr. 139: 
+Difference Nr. 140: 
+Difference Nr. 141:
+Difference Nr. 142: 
+Difference Nr. 143: 
+Difference Nr. 144:
+Difference Nr. 145: 
+Difference Nr. 146: 
+Difference Nr. 147: 
+Difference Nr. 148: 
+Difference Nr. 149:
+Difference Nr. 150:
+Difference Nr. 151:
+Difference Nr. 152: 
+Difference Nr. 153:
+Difference Nr. 154:
+Difference Nr. 155: 
+Difference Nr. 156:
+Difference Nr. 157: 
+Difference Nr. 158: 
+Difference Nr. 159: 
+Difference Nr. 160: 
+Difference Nr. 161: 
+Difference Nr. 162: 
+Difference Nr. 163: 
+Difference Nr. 164:
+Difference Nr. 165: 
+Difference Nr. 166: 
+Difference Nr. 167: 
+Difference Nr. 168: 
+Difference Nr. 169: 
+Difference Nr. 170: 
+Difference Nr. 171: 
+Difference Nr. 172: 
+Difference Nr. 173: 
+Difference Nr. 174: 
+Difference Nr. 175: 
+Difference Nr. 176: 
+Difference Nr. 177: Class added: DefaultAdaptionFormula was added
+Difference Nr. 178: Class added: DuplicateIdentifierException was added
+Difference Nr. 179: Class added: MinHeapViolationException was added
+Difference Nr. 180: Class added: TaxonomyCompiler was added
+Difference Nr. 181: Class added: TaxonomyCycleException was added
+Difference Nr. 182: Class added: TaxonomyFctGenerator was added
+Difference Nr. 183: Class added: SubTaxonomy was added
+Difference Nr. 184: Class added: SubTaxonomyNode was added
+Difference Nr. 185: Class added: AllSubtaxonomyTests was added
+Difference Nr. 186: Class added: SubTaxonomyTest was added
+Difference Nr. 187: Class added: TaxonomyCompilerTest was added
+Difference Nr. 188: Class added: TaxonomyFctGeneratorTest was added
+Difference Nr. 189: Class added: ObjectModelExporter was added
+Difference Nr. 190: Class added: ObjectModelImporter was added
+Difference Nr. 191: Class added: SubTaxonomyExporter was added
+Difference Nr. 192: Class added: SubTaxonomyImporter was added
+Difference Nr. 193: Class added: Test1000 was added
+Difference Nr. 194: Class added: Dependency was added
+Difference Nr. 195: Class added: GlobalMaintenanceMap was added
+Difference Nr. 196: Class added: LocalMaintenanceMap was added
+Difference Nr. 197: Class added: MaintenanceController was added
+Difference Nr. 198: Class added: MaintenanceMap was added
+Difference Nr. 199: Class added: MMTest was added
