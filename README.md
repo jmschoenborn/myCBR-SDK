@@ -17,9 +17,5 @@ Somit ist der Branch myCBR-3.4-Standke-Kreuzkam-Ude-Floeter die derzeit aktuells
 ### ToDo
 
 1.) Version 3.3 fügte Log4j ein. Trotz besseren Wissens bzgl. der gefunden Schwachstellen, habe ich diesen integriert um Inkonsistenzen zu vermeiden. Dieser muss noch durch eine Alternative ausgetauscht werden. 
-
-2.) (minor) Die Funktionen und Klassenattribute könnten mal aufgeräumt / alphabetisch bzw. anwendungszweckbezogen sortiert werden :)
-
-3.) Einige Tests werden nicht verwendet bzw. besitzen viel auskommentierten Code - müsste mal wieder angepasst werden.
-
-4.) Der XMLExporter exportiert eine .myMmap, der XMLImporter importiert dieser aber nicht mehr. Ist sicherlich nicht so gewollt?
+2.) Einige Tests werden nicht verwendet bzw. besitzen viel auskommentierten Code.
+3.) Der XMLExporter exportiert eine .myMmap, der XMLImporter importiert dieser aber nicht mehr. Ist sicherlich nicht so gewollt?
